@@ -1,0 +1,17 @@
+import java.text.NumberFormat;
+
+public class heartrate {
+
+	public static void main(String[] args) {
+		int age = 31;
+		double healthmaintenance = (220 - age) * 0.6;
+		NumberFormat format = NumberFormat.getInstance();
+		format.setMaximumFractionDigits(0);
+		System.out.println("健康維持の心拍数は" + format.format(healthmaintenance) + "です。");
+		double fatburning = (220 - age) * 0.7;
+		System.out.println("脂肪燃焼の心拍数は" + format.format(fatburning) + "です。");
+		double cardiotraining = (220 - age) * 0.8;
+		System.out.println("心肺機能向上の心拍数は" + format.format(cardiotraining) + "です。");
+	}
+
+}
